@@ -21,6 +21,18 @@ NODEID VALUE1 VALUE2 VALUE3 VALUE....
 ```
   This format is the format that most of the [emonTX sketches](https://github.com/openenergymonitor/emonTxFirmware/tree/master/emonTxV3) output. In some case you will need to enable debug, in others you will need just a small modification to the sketch to add NODEID or to remove extraneous text amongst values.
 
+## Getting started
+- download this sketch
+- download all the libraries mentioned in the sketch and put them in your Arduino IDE's libraries folder
+- get and add your emoncms.org write key to the sketch
+- modify your emonTX sketch to print in the requiered format
+- burn the sketch to your ESP module
+- connect ground to ground and emonTX TX line to ESP RX line
+- start them up
+- if you included the WiFiManager library it will start an access point for you to easily configure which access point the ESP will connect to
+- after it restarts you should start seeing data in your EmonCMS account
+
+
 #### TODO
 - add MQTT support
 - more error checking
