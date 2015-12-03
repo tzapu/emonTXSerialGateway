@@ -28,6 +28,7 @@ NODEID VALUE1 VALUE2 VALUE3 VALUE....
 - modify your emonTX sketch to print in the requiered format
 - burn the sketch to your ESP module
 - connect ground to ground and emonTX TX line to ESP RX line
+  (on emonTX v3.4 the TX line is labeled RX as on the programmer, connect to RX)
 - start them up
 - if you included the WiFiManager library it will start an access point for you to easily configure which access point the ESP will connect to
 - after it restarts you should start seeing data in your EmonCMS account
